@@ -46,4 +46,15 @@ public static void livrosDeMiaCouto (Livro[] livros) {
 	System.out.println();
 }
 
+public static void compararLivros (Livro[] livros) {
+	
+	Livro setimo = livros[6];
+	for(int i=0; i<livros.length;i++) {
+		System.out.println(livros[i].equals(setimo));
+		
+	}
+	System.out.println();
+	
+}
+
 }
