@@ -32,5 +32,18 @@ public static void listarLivros (Livro[] livros) {
 		System.out.println();
 	}
 	
+public static void livrosDeMiaCouto (Livro[] livros) {
+	
+	for(int i=0; i<livros.length;i++) {
+		
+		if(livros[i].getAutor().equalsIgnoreCase("Mia Couto")) {
+			System.out.println("O Titulo Do Livro E: "+livros[i].getTitulo());
+			System.out.println("Edicao Do Livro: "+livros[i].getEdicao());
+			System.out.println("O Tempo de Existencia do Livro E: "
+			+livros[i].calcularTempoDeExistencia());	
+		}
+	}
+	System.out.println();
+}
 
 }
