@@ -62,4 +62,14 @@ public static void livrosCriados () {
 	System.out.println();
 }
 
+public static void livrosDeEdicoesXitlango (Livro[] livros) {
+	
+	for(int i=0; i<livros.length;i++) {
+		if(livros[i].getEdicao().equalsIgnoreCase("Xitlango")) {
+			livros[i].imprimir();
+		}
+	}
+	System.out.println();
+}
+
 }
