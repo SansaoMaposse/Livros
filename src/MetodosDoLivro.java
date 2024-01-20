@@ -11,7 +11,7 @@ static Scanner input = new Scanner (System.in);
 			System.out.print("Digite o Titulo do Livro: ");
 			String titulo= input.next();
 			System.out.print("Digite o Autor do Livro: ");
-			String autor= input.nextLine();
+			String autor= input.next();
 			System.out.print("Digite a Edicao do  Livro: ");
 			String edicao= input.next();
 			System.out.print("Digite o Ano da Publicacao do Livro: ");
@@ -36,7 +36,7 @@ public static void livrosDeMiaCouto (Livro[] livros) {
 	
 	for(int i=0; i<livros.length;i++) {
 		
-		if(livros[i].getAutor().equalsIgnoreCase("Mia Couto")) {
+		if(livros[i].getAutor().equalsIgnoreCase("Mia")) {
 			System.out.println("O Titulo Do Livro E: "+livros[i].getTitulo());
 			System.out.println("Edicao Do Livro: "+livros[i].getEdicao());
 			System.out.println("O Tempo de Existencia do Livro E: "
@@ -48,17 +48,16 @@ public static void livrosDeMiaCouto (Livro[] livros) {
 
 public static void compararLivros (Livro[] livros) {
 	
-	Livro setimo = livros[6];
-	for(int i=0; i<livros.length;i++) {
-		System.out.println(livros[i].equals(setimo));
-		
+	for (int i = 0; i < livros.length; i++) {
+		System.out.println(livros[i].equals(livros[livros.length - 2]));
 	}
 	System.out.println();
 	
 }
 
 public static void livrosCriados () {
-	System.out.println("O Foram criados "+ Livro.contarNumeroDeObjectosCriados+ " Objectos.");
+	System.out.println("O Foram criados "+ Livro.contarNumeroDeObjectosCriados+ " Livros.");
+	
 	System.out.println();
 }
 
