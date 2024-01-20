@@ -57,4 +57,9 @@ public static void compararLivros (Livro[] livros) {
 	
 }
 
+public static void livrosCriados () {
+	System.out.println("O Foram criados "+ Livro.contarNumeroDeObjectosCriados+ " Objectos.");
+	System.out.println();
+}
+
 }
