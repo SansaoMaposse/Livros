@@ -23,5 +23,14 @@ static Scanner input = new Scanner (System.in);
 			System.out.println();
 		}
 	}
+	
+public static void listarLivros (Livro[] livros) {
+		
+		for(int i=0; i<livros.length;i++) {
+			System.out.println(livros[i].toString());
+		}
+		System.out.println();
+	}
+	
 
 }
